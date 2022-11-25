@@ -6,9 +6,9 @@ public class Animals {
 
     public Animals(String name, int age) {
         this.name = name;
-        if (age <=0) {
+        if (age <= 0) {
             this.age = 1;
-        }else {
+        } else {
             this.age = age;
         }
 
@@ -25,10 +25,12 @@ public class Animals {
     public static void eat() {
         System.out.println("Время есть");
     }
+
     public static void sleep() {
         System.out.println("Время спать ");
     }
-    public static void go () {
+
+    public static void go() {
         System.out.println(" Время перемещаться");
     }
 

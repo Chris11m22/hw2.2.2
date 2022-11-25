@@ -28,7 +28,7 @@ public class Amphibians extends Animals {
 
     @Override
     public String toString() {
-        return "Amphibians{" + "name='" + getName() + '\'' + ", age=" + getAge() +  "place='" + place + '\'' + '}';
+        return "Amphibians{" + "name='" + getName() + '\'' + ", age=" + getAge() + "place='" + place + '\'' + '}';
     }
 
     @Override

@@ -23,16 +23,19 @@ public class Flightless extends Bird {
             this.move = move;
         }
     }
-    public static void huntint(){
+
+    public static void huntint() {
         System.out.println("Время охоты");
     }
+
     public static void eat() {
         System.out.println("Лювлю добычу");
     }
 
-    public static void go () {
+    public static void go() {
         System.out.println("Иду домой");
     }
+
     public static void walk() {
         System.out.println("Гуляю по берегу");
     }

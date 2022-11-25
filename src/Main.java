@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        Amphibians kwa = new Amphibians("Лягушка ", 2," ");
+        Amphibians kwa = new Amphibians("Лягушка ", 2, " ");
         System.out.println("kwa = " + kwa);
-        Amphibians shh = new Amphibians("Уж",3," ");
+        Amphibians shh = new Amphibians("Уж", 3, " ");
         System.out.println("shh = " + shh);
         Herbivorous gazelle = new Herbivorous("Газель", 4, "саванна", 100, " трава");
         Herbivorous giraffe = new Herbivorous("Жираф", 2, "саванна", 100, " трава");
@@ -16,20 +16,18 @@ public class Main {
         System.out.println("hyena = " + hyena);
         System.out.println("tiger = " + tiger);
         System.out.println("bear = " + bear);
-        Flightless peacock = new Flightless("Павлин", 2, "зоопарк","пешком");
-        Flightless penguin = new Flightless("Пингвин", 4, "полюс","пешком");
-       Flightless dodo = new Flightless("Додо", 2, "лес","пешком");
+        Flightless peacock = new Flightless("Павлин", 2, "зоопарк", "пешком");
+        Flightless penguin = new Flightless("Пингвин", 4, "полюс", "пешком");
+        Flightless dodo = new Flightless("Додо", 2, "лес", "пешком");
         System.out.println("peacock = " + peacock);
         System.out.println("penguin = " + penguin);
         System.out.println("dodo = " + dodo);
-        Flying seagull = new Flying("Чайка", 2, "озеро","летит");
-       Flying albatross = new Flying("Альботрос", 4, "озеро","летит");
-        Flying falcon = new Flying("Сокол", 2, "лес","летит");
+        Flying seagull = new Flying("Чайка", 2, "озеро", "летит");
+        Flying albatross = new Flying("Альботрос", 4, "озеро", "летит");
+        Flying falcon = new Flying("Сокол", 2, "лес", "летит");
         System.out.println("seagull = " + seagull);
         System.out.println("albatross = " + albatross);
         System.out.println("falcon = " + falcon);
-
-
 
 
     }

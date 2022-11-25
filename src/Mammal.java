@@ -17,20 +17,22 @@ public class Mammal extends Animals {
     public int getSpeed() {
         return speed;
     }
+
     public static void walk() {
         System.out.println("Гуляю по лугу");
     }
-        public static void eat() {
-            System.out.println("Ем листья");
-        }
 
-        public static void go () {
-            System.out.println("Ищу тихое место");
-        }
+    public static void eat() {
+        System.out.println("Ем листья");
+    }
+
+    public static void go() {
+        System.out.println("Ищу тихое место");
+    }
 
     @Override
     public String toString() {
-        return "Mammal{"+ "name='" + getName() + '\'' + ", age=" + getAge() + "place='" + place + '\'' + ", speed=" + speed + '}';
+        return "Mammal{" + "name='" + getName() + '\'' + ", age=" + getAge() + "place='" + place + '\'' + ", speed=" + speed + '}';
     }
 
     @Override

@@ -1,13 +1,13 @@
 import java.util.Objects;
 
 public class Flying extends Bird {
-     public String moving;
+    public String moving;
 
     public Flying(String name, int age, String place, String moving) {
         super(name, age, place);
         if (moving == null) {
             this.moving = "летает";
-        }else {
+        } else {
             this.moving = moving;
         }
     }
@@ -19,21 +19,24 @@ public class Flying extends Bird {
     public void setMoving(String moving) {
         if (moving == null) {
             this.moving = "летает";
-        }else {
-        this.moving = moving;
+        } else {
+            this.moving = moving;
+        }
+
     }
 
-}
-    public static void huntint(){
+    public static void huntint() {
         System.out.println("Время охоты");
     }
+
     public static void eat() {
         System.out.println("Лювлю добычу");
     }
 
-    public static void go () {
+    public static void go() {
         System.out.println("Иду домой");
     }
+
     public static void walk() {
         System.out.println("Гуляю по берегу");
     }

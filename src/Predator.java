@@ -11,20 +11,22 @@ public class Predator extends Mammal {
     public String getFood() {
         return food;
     }
-    public static void huntint(){
+
+    public static void huntint() {
         System.out.println("Время охоты");
     }
+
     public static void eat() {
         System.out.println("Лювлю добычу");
     }
 
-    public static void go () {
+    public static void go() {
         System.out.println("Иду в логово");
     }
 
     @Override
     public String toString() {
-        return "Predator{"+ "name='" + getName() + '\'' + ", age=" + getAge()  + "food='" + food + '\'' + '}';
+        return "Predator{" + "name='" + getName() + '\'' + ", age=" + getAge() + "food='" + food + '\'' + '}';
     }
 
     @Override

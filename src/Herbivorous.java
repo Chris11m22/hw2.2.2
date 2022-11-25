@@ -11,16 +11,18 @@ public class Herbivorous extends Mammal {
     public String getFood() {
         return food;
     }
+
     public static void graze() {
         System.out.println("Пасусь на лугу");
     }
+
     public static void eat() {
         System.out.println("Ем траву");
     }
-    public static void go () {
+
+    public static void go() {
         System.out.println("Ищу вкусную траву");
     }
-
 
 
     @Override

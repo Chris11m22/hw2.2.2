@@ -23,20 +23,22 @@ public class Bird extends Animals {
             this.place = place;
         }
     }
-        public static void hunt(){
-            System.out.println("Охочусь");
-        }
-        public static void eat() {
-            System.out.println("Лювлю добычу");
-        }
 
-        public static void go () {
-            System.out.println("Лучу в гнездо");
-        }
+    public static void hunt() {
+        System.out.println("Охочусь");
+    }
+
+    public static void eat() {
+        System.out.println("Лювлю добычу");
+    }
+
+    public static void go() {
+        System.out.println("Лучу в гнездо");
+    }
 
     @Override
     public String toString() {
-        return "bird{"+ "name='" + getName() + '\'' + ", age=" + getAge()  + "place='" + place + '\'' + '}';
+        return "bird{" + "name='" + getName() + '\'' + ", age=" + getAge() + "place='" + place + '\'' + '}';
     }
 
     @Override
