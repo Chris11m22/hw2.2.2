@@ -1,7 +1,9 @@
-public class flying extends bird{
+import java.util.Objects;
+
+public class Flying extends Bird {
      public String moving;
 
-    public flying(String name, int age, String place, String moving) {
+    public Flying(String name, int age, String place, String moving) {
         super(name, age, place);
         if (moving == null) {
             this.moving = "летает";
@@ -36,8 +38,23 @@ public class flying extends bird{
         System.out.println("Гуляю по берегу");
     }
 
-    public void i() {
-        System.out.println(getName() + " возраст " + getAge() + " место " + getPlace() + " " + getMoving());
+    @Override
+    public String toString() {
+        return "Flying{" + "name='" + getName() + '\'' + ", age=" + getAge() + "moving='" + moving + '\'' + ", place='" + place + '\'' + '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Flying flying = (Flying) o;
+        return Objects.equals(moving, flying.moving);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), moving);
     }
 }
 

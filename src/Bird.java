@@ -1,7 +1,9 @@
-public class bird extends Animals {
+import java.util.Objects;
+
+public class Bird extends Animals {
     public String place;
 
-    public bird(String name, int age, String place) {
+    public Bird(String name, int age, String place) {
         super(name, age);
         if (place == null) {
             place = "небо";
@@ -34,9 +36,21 @@ public class bird extends Animals {
 
     @Override
     public String toString() {
-        return "bird{" +
-                "place='" + place + '\'' +
-                '}';
+        return "bird{"+ "name='" + getName() + '\'' + ", age=" + getAge()  + "place='" + place + '\'' + '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Bird bird = (Bird) o;
+        return Objects.equals(place, bird.place);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), place);
     }
 }
 

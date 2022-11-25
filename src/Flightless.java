@@ -1,9 +1,9 @@
 import java.util.Objects;
 
-public class flightless extends bird {
+public class Flightless extends Bird {
     public String move;
 
-    public flightless(String name, int age, String place, String move) {
+    public Flightless(String name, int age, String place, String move) {
         super(name, age, place);
         if (move == null) {
             move = "пешком";
@@ -37,10 +37,23 @@ public class flightless extends bird {
         System.out.println("Гуляю по берегу");
     }
 
-    public void d() {
-        System.out.println(getName() + " возраст " + getAge() + " место " + getPlace() + " " + getMove());
+    @Override
+    public String toString() {
+        return "Flightless{" + "name='" + getName() + '\'' + ", age=" + getAge() + "move='" + move + '\'' + ", place='" + place + '\'' + '}';
     }
 
-
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Flightless that = (Flightless) o;
+        return Objects.equals(move, that.move);
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), move);
+    }
+}
 
